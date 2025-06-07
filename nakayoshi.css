@@ -877,3 +877,8 @@ iframe {
     .footer1{max-width: 100%;}
 }
 
+@media (min-width:420px) and (max-width:440px) {
+    .insta{width: 20px; height: 20px; left: 41px; top: 239px;}
+    .footeraa{top: 236px; left: 66px; font-size: 22px;}
+}
+
