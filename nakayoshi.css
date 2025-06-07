@@ -869,10 +869,14 @@ iframe {
     .aaaa{font-size: 15px; left: 500px; width: 30%;}
     .aaaa::after{width: 80%; top: -84px; left: 10px;}
     .foot{width: 80%;}
-    .aa{display: inline; font-size: 15px; padding-right: 0; margin-left: 10px;}
+    .aa{display: inline; font-size: 15px; padding-right: 20px; margin-left: 10px;}
     .big::after{width: 25%; top: 158px; left: 420px;}
     .big{width: 76%;}
     .ul1{display: flex;}
     header{width: 100%;}
     .list12{display: inline;}
+    header{max-width: 100%;}
+    .section1,.section2,.section3,.section4,.section5{max-width: 100%;}
+    .footer1{max-width: 100%;}
 }
+
