@@ -861,7 +861,7 @@ iframe {
     .us{object-fit: contain; height: 290px;}
 }
 
-@media (min-width:849px) and (max-width:855px) {
+@media (min-width:800px) and (max-width:885px) {
     iframe{position: absolute; top: 92px; left: 400px;}
     .tel{width: 80%;}
     .mail{width: 80%;}
