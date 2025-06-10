@@ -784,6 +784,11 @@ iframe {
     .instagram{margin-left: -17px;}
 }
 
+@media (min-width: 690px) and (max-width: 715px) {
+    .title1{font-size: 25px;}
+    .aa{font-size: 15px;}
+}
+
 @media (min-width: 720px) and (max-width: 745px) {
     .mostbig{width: 80%; margin: 0 au;}
     .section4{height: auto; margin-top: 20px; margin-bottom: 20px;}
