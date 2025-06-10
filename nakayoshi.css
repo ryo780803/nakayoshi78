@@ -555,27 +555,6 @@ iframe {
     font-size: 20px;
 }
 
-.aaaa {
-    font-size: 20px;
-    padding: 5px;
-    font-family: 'Times New Roman', Times, serif;
-    color: whitesmoke;
-    text-decoration: none;
-    border-radius: 40px;
-    position: absolute;
-    top: 310px;
-    right: 30px;
-}
-
-
-.aaaa:hover {
-    background-color: bisque;
-    color: cadetblue;
-    border-radius: 40px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s ease-in-out;
-}
-
 
 @media (max-width:480px){
     footer{height: auto;margin-bottom: 0px;}
@@ -656,7 +635,6 @@ iframe {
     .namefor{margin-left: 60px;}
     .copyri{padding-bottom: 5px;}
     .title1{font-size: 50px;font-family: 'Times New Roman', Times, serif;}
-    #to:hover{background-color: aliceblue;}
     footer{box-shadow: 5px 10px 15px 4px rgba(0, 0, 0, 0.2) inset;}
     .service{margin-bottom: 40px;}
     .face{object-fit:cover;}
@@ -696,8 +674,6 @@ iframe {
     iframe{width: 270px;height: 130px;}
     .footeraa{top: 305px;left: 125px;}
     .insta{top: 310px;left: 90px;}
-    .aaaa{top: 345px;}
-    .aaaa::after{font-size: 10px;top: -65px;width: 90%;left: 10%;}
     .copyri{margin: 0;padding-bottom: 5px;}
     .footertit{margin-bottom: 20px;}
     .room01::before{top: 364px; left: 7px;font-size: 40px;}
@@ -767,11 +743,6 @@ iframe {
     .big::after{width: 23%;}
     .instagram{margin-left: -25px;}
 
-}
-
-@media (min-width:1600px) and (max-width:1620px) {
-    .foryoko::before{left: 32%;}
-    .room01::before{left: 67%;}
 }
 
 @media (max-width:345px) {
@@ -898,3 +869,8 @@ iframe {
 }
 
 .instafle{display: flex; align-items: center; margin-bottom: 10px;}
+
+@media (min-width:1600px) and (max-width:1620px) {
+    .foryoko::before{left: 32%;}
+    .instagram{margin-left: -50px;}
+}
