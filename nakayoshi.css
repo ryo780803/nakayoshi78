@@ -31,7 +31,7 @@ header {
     margin-left: 5px;
 }
 .ul1{
-    width: 100%;
+    max-width: 100%;
     list-style: none;
     justify-content: space-around;
     display: flex;
@@ -64,7 +64,7 @@ header {
 
 @media (max-width:480px){
     header {
-        width: 100%;
+        max-width: 100%;
         height: 30px;
         display: flex;
     }
@@ -89,7 +89,7 @@ header {
 }
 
 @media (min-width:740px) and (max-width:1030px) {
-    header{width: 100%; position: static;}
+    header{max-width: 100%; position: static;}
     .title1{font-size: 120%;}
     .aa{font-size: 100%;}
     .header { position: absolute;
@@ -260,24 +260,24 @@ header {
 }
 
 .foryoko {
-    display: flex;
+    display: block;
     width: 80%;
     margin: 0 auto;
     column-gap: 30px;
     margin-top: 20px;
     position: relative;
 }
-.foryoko::after {
+/* .foryoko::after {
     content: "01";
     position: absolute;
     font-size: 70px;
     top: -20px;
     left: 10px;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+/* }  */
 
-.foryoko::before {
+/* .foryoko::before { */
     content: "02";
     position: absolute;
     font-size: 70px;
@@ -285,7 +285,7 @@ header {
     left: 330px;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+/* } */
 @media (max-width:480px){
     .foryoko::before{
         content: "02";
@@ -303,15 +303,15 @@ header {
 .room01 {
     width: 100%;
 }
-.room01::before {
-    content: "03";
+/* .room01::before { */
+    /* content: "03";
     position: absolute;
     font-size: 70px;
     top: -20px;
     left: 890px;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */ 
+/* } */
 
 .normalcl {
     text-align: center;
@@ -329,14 +329,6 @@ header {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     line-height: 25px;
-}
-
-@media (max-width:480px) {
-       .room01::before{content: "03";
-        position: absolute;
-        font-size: 35px;
-        top: 449px;left: 0;}
-        .sent{font-size: 18px;}
 }
 
 @media (min-width:740px) and (max-width:1030px) {
@@ -524,18 +516,6 @@ footer {
     padding-top: 40px;
 }
 
-.footeraa {
-    position: absolute;
-    width: 100%;
-    height: 30px;
-    display: inline;
-    top: 297px;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    left: 200px;
-    color: whitesmoke;
-    text-decoration: none;
-}
 
 @media(max-width:480px){
     .footeraa{display: block;position: absolute;top: 230px;left: 75px;font-size: 28px; width: 70%;}
@@ -587,13 +567,6 @@ iframe {
     right: 30px;
 }
 
-.aaaa::after {
-    content: "HPを業者ではなく自分たちで作成しました。はじめに使いやすさなどの面でどうしても劣ってしまうこと,ご理解していただけるとありがたいです。そのためお手数おかけしますが、以下E-mailリンクにてお問い合わせいただけると幸いです。";
-    position: absolute;
-    top: -100px;
-    right: 0;
-    font-size: small;
-}
 
 .aaaa:hover {
     background-color: bisque;
@@ -601,13 +574,6 @@ iframe {
     border-radius: 40px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease-in-out;
-}
-
-.insta {
-    width: 30px;
-    position: absolute;
-    top: 300px;
-    left: 159px;
 }
 
 
@@ -620,7 +586,6 @@ iframe {
     .tel,.mail{margin-left: 40px;font-size: 18px;}
     .map{display: block;}
     iframe{margin-top: 80px;width: 70px;height: 70px;}
-    .insta{position: absolute;top: 237.5px;left: 40px; width: 20px; height: 20px;}
     .copyri{margin-top: 0; padding-bottom: 5px;font-size: 5px;}
     .aaaa{font-size: 10px;position: absolute;top: 330px;}
     .aaaa:hover {
@@ -633,8 +598,18 @@ iframe {
     .foryoko::before {top: 197px;}
     .aaaa::after{font-size: 5px;top: -30px;}
     .room01::before{top: 400px;}
-    .footeraa{font-size: 20px; left: 69px; top: 237px;}
+    .footeraa{font-size: 20px; left: 69px; top: 237px; vertical-align: middle;}
+    .insta{margin: 0 0 0 40px;}
+    .instagram{padding: 0; margin-left: 5px;}
 }
+
+.insta {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.wanttell{max-width: 80%; font-size: 8px; color: rgb(229, 246, 195); margin: 0 auto; margin-bottom: 10px;}
 
 @media (min-width:740px) and (max-width:1030px) {
     .footer1{height: auto; padding-bottom: 70px;}
@@ -652,6 +627,9 @@ iframe {
     .title1{font-size: 100%;}
     .aa{font-size: 70%;}
     .us{object-fit: contain;}
+    .insta{margin-left: 88px; width: 30px; height: 30px;}
+    .instagram{font-size: 25px;}
+    .wanttell{font-size: 14px;}
 }
 
 @media (min-width:1050px) and (max-width:1800px) {
@@ -663,11 +641,11 @@ iframe {
     .copyri{margin: 0;font-size: 10px;}
     .aaaa::after{font-size: 15px;width: 80%;left: 50px; top: -143px;}
     .aaaa{font-size: 25px;margin-top: 90px;}
-    .insta{top: 302px;}
     .aboutus{font-size: 50px; padding-top:0;}
     .sec1p,.sec2p,.sec3p{font-size: 20px;}
     .smalltit{font-size: 25px;}
     .aboutus2{font-size: 50px;font-family: 'Times New Roman', Times, serif;}
+    .section3{height: auto;}
     .section4{margin-bottom: 40px;margin-top: 800px;}
     .rep{font-family: 'Times New Roman', Times, serif;font-size: 50px;}
     .section5{height: auto;margin-bottom: 40px;}
@@ -693,6 +671,13 @@ iframe {
     .repsec5,.repsec6,.repsec7,.repsec8{line-height: 40px;}
     .thinking{line-height: 40px;}
     .section5{margin-top: 120px;}
+    .insta{margin-left: 160px; width: 25px; height: 25px;}
+    .instagram{margin-left: -20px;}
+    .wanttell{font-size: 16px;}
+}
+
+@media (min-width:1275px) and (max-width:1285px) {
+    .instagram{font-size: 20px; margin-left: 0px;}
 }
 
 .gmail{color: whitesmoke;
@@ -759,7 +744,9 @@ iframe {
 }
 
 @media (min-width:540px) and (max-width:545px) {
-    .insta{top: 300px;}
+    .insta{margin-left: 20px; width: 25px; height: 25px;}
+    .instagram{margin-left: -29px; font-size: 20px;}
+    .wanttell{font-size: 12px;}
     .footeraa{top: 295px;}
     iframe{width: 150px;}
     .aaaa{top: 343px;}
@@ -778,6 +765,8 @@ iframe {
 
 @media (min-width:1020px) and (max-width:1025px) {
     .big::after{width: 23%;}
+    .instagram{margin-left: -25px;}
+
 }
 
 @media (min-width:1600px) and (max-width:1620px) {
@@ -792,7 +781,6 @@ iframe {
 @media (min-width:660px) and (max-width: 680px) {
     .room01::before{left: 0;}
     .footeraa{width: 50%;}
-    iframe{width: 30%; height: 30%; margin-left: 80px; position: absolute; top: 90px; left: 300px;}
     .title1{font-size: 19px;}
     .aa{font-size: 15px;}
     .mostbig{width: 80%;}
@@ -819,27 +807,45 @@ iframe {
     .foot2{margin-left: 19%; font-size: 17px;}
     .tel,.mail{margin-left: 19%;}
     .gmail{font-size: 17px;}
-    .insta{top: 313px; left: 47px; width: 25px; height: 25px;}
     .footeraa{top: 309px; font-size: 25px; left: 80px;}
+    .insta{margin-left: 48px;}
+    .instafle{justify-content:left;}
+    .instagram{margin-left: -17px;}
 }
 
-@media (min-width: 730px) and (max-width: 745px) {
-    .big{width: 90%;}
-    *{font-size: 1rem;}
+@media (min-width: 720px) and (max-width: 745px) {
+    .mostbig{width: 80%; margin: 0 au;}
+    .section4{height: auto; margin-top: 20px; margin-bottom: 20px;}
+    .us{object-fit: contain; height: 350px;}
+    .section1-1{width: 80%;}
+    .aboutus2{font-size: 35px;}
+    .bigroom{width: 100%;}
+    .sec2tit{margin-top: 0;}
+    .big{width: 70%; margin-bottom: 15px;}
+    .big::after{width: 25%;}
     .namefor{font-size: 9px;}
     .thinking{font-size: 17px;}
     .us{width: 100%; object-fit: cover;}
-    .insta{left: 85px; top: 315px; height: 25px; width: 25px;}
     .footeraa{width: 80%; font-size: 25px; top: 312px;}
     .repsec5,.repsec6,.repsec7,.repsec8{font-size: 20px;}
     .aaaa{font-size: 17px;}
+    .section3{height: auto;}
+    .catchph{font-size: 10px;}
+    .service{font-size: 55px;}
+    .section5{height: auto;}
+    .insta{margin-left: 160px; width: 25px; height: 25px;}
+    .instagram{margin-left: 80px;}
+    .wanttell{font-size: 14px;}
+    .copyri{margin-top: 12px; padding-bottom: 5px;}
 }
 
 @media (min-width: 1160px) and (max-width:1190px) {
     iframe{height: 50%; width: 30%;}
     .aaaa::after{top: -128px;}
     .aaaa{top: 180px;}
-    .insta{top: 275px; left: 157px;}
+    .insta{margin-left: 160px; width: 25px; height: 25px;}
+    .instagram{font-size: 20px; margin-left: 10px;}
+    .wanttell{font-size: 13px;}
     .footeraa{top: 270px;}
     .section3{height: auto;}
     .section5{margin-top: 60px;}
@@ -876,7 +882,19 @@ iframe {
 }
 
 @media (min-width:420px) and (max-width:440px) {
-    .insta{width: 20px; height: 20px; left: 41px; top: 239px;}
     .footeraa{top: 236px; left: 66px; font-size: 22px;}
+    .us{object-fit: contain; height: 300px;}
+    .gmail{font-size: 15px;}
 }
 
+.aforinsta{
+    width: 15%;
+    display: block;
+}
+
+.instagram{
+    display: block;
+    text-decoration: none;
+}
+
+.instafle{display: flex; align-items: center; margin-bottom: 10px;}
